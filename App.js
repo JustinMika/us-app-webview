@@ -1,16 +1,28 @@
-import {StatusBar} from 'expo-status-bar';
-import {SafeAreaView, StyleSheet} from 'react-native';
-import {WebView} from 'react-native-webview';
+import {StatusBar} from 'expo-status-bar'
+import {SafeAreaView, StyleSheet, View, Text} from 'react-native'
+import {WebView} from 'react-native-webview'
 
-export default function App() {
+export default function App() { // const url = "https://ulizaservices.com/"
+    const url = "https://google.com/"
     return (
-        <SafeAreaView>
-            <StatusBar style="auto" hidden/>
+        <SafeAreaView style={
+            {
+                flex: 1,
+                paddingTop: 40
+            }
+        }>
+            <StatusBar style='auto'/>
+
             <WebView source={
-                    {uri: 'https://infinite.red'}
+                    {uri: url}
+                }
+                onLoad={
+                    () => {
+                        console.log("Loading")
+                    }
                 }
                 style={
-                    {marginTop: 20}
+                    styles.container
                 }/>
         </SafeAreaView>
     );
@@ -23,4 +35,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     }
-});
+})
