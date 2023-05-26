@@ -1,13 +1,13 @@
 import {StatusBar} from 'expo-status-bar';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import { WebView } from 'react-native-webview';
+import {WebView} from 'react-native-webview';
 
 export default function App() {
     return (
         <SafeAreaView>
             <StatusBar style="auto" hidden/>
             <WebView source={
-                    {uri: 'https://github.com/facebook/react-native'}
+                    {uri: 'https://infinite.red'}
                 }
                 style={
                     {marginTop: 20}
