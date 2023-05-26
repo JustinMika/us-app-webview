@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <SafeAreaView>
+            <StatusBar style="auto" hidden/>
+            <WebView source={
+                    {uri: 'https://github.com/facebook/react-native'}
+                }
+                style={
+                    {marginTop: 20}
+                }/>
+        </SafeAreaView>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 });
