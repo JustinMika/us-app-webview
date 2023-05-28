@@ -2,8 +2,9 @@ import {StatusBar} from 'expo-status-bar'
 import {SafeAreaView, StyleSheet, View, Text} from 'react-native'
 import {WebView} from 'react-native-webview'
 
-export default function App() { // const url = "https://ulizaservices.com/"
-    const url = "https://google.com/"
+export default function App() { 
+    // const url = "https://google.com/"
+    const url = "https://ulizaservices.com/"
     return (
         <SafeAreaView style={
             {
@@ -12,7 +13,6 @@ export default function App() { // const url = "https://ulizaservices.com/"
             }
         }>
             <StatusBar style='auto'/>
-
             <WebView source={
                     {uri: url}
                 }
