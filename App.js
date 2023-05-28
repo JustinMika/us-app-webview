@@ -1,10 +1,10 @@
 import {StatusBar} from 'expo-status-bar'
-import {SafeAreaView, StyleSheet, View, Text} from 'react-native'
+import {SafeAreaView, StyleSheet} from 'react-native'
 import {WebView} from 'react-native-webview'
 
 export default function App() { 
-    // const url = "https://google.com/"
     const url = "https://ulizaservices.com/"
+    // gp5u-yCMULDuC@4b
     return (
         <SafeAreaView style={
             {

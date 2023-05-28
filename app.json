@@ -1,30 +1,35 @@
 {
-  "expo": {
-    "name": "Uliza_service_app",
-    "slug": "Uliza_service_app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "expo": {
+        "name": "Uliza_service_app",
+        "slug": "Uliza_service_app",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/Uliza-logo.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/Uliza-logo.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.ulizaservices.us"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/Uliza-logo.png",
+                "backgroundColor": "#ffffff"
+            },
+            "package": "com.ulizaservices.us"
+        },
+        "web": {
+            "favicon": "./assets/Uliza-logo.png"
+        },
+        "extra": {
+            "eas": {
+                "projectId": "f7f51843-fe98-449c-a4f1-c5ce00f290a3"
+            }
+        }
     }
-  }
 }
